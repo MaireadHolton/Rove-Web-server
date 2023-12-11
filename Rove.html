@@ -1,0 +1,25 @@
+<!DOCTYPE html> 
+<html>
+    <head>
+        <title>RoveApp2 WebApp Server</title>
+        <link rel="stylesheet" href="rove2-single-web-server.onrender.com/stylesheets/style.css">
+    </head>
+    <body>
+        <h1>RoveApp2 WebApp Server</h1>
+        <p>Welcome to RoveApp2 WebApp Server</p>
+        <pre>
+            // Our Custom RoveAppp2 Web App Routes
+             app.get('/visits', visits.findAll);
+            app.get('/users', users.findAll);
+
+            app.get('/visits/:id', visits.findOne);
+            app.get('/users/:id', users.findOne);
+
+            app.post('/visits',visits.addVisit);
+
+            app.put('/visits/:id', visits.editVisit);
+
+            app.delete('/visits/:id', visits.deleteVisit);
+        </pre>
+    </body>
+</html>
